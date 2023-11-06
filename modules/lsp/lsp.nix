@@ -24,6 +24,7 @@ in
     dhall = mkEnableOption "Dhall LSP";
     elm = mkEnableOption "Elm LSP";
     haskell = mkEnableOption "Haskell LSP (hls)";
+    clojure = mkEnableOption "Clojure LSP";
 
     scala = {
       enable = mkEnableOption "Scala LSP (Metals)";

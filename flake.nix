@@ -114,6 +114,10 @@
       url = github:scalameta/nvim-metals;
       flake = false;
     };
+    conjure = {
+      url = github:olical/conjure;
+      flake = false;
+    };
 
     # Folds
     nvim-ufo = {

@@ -12,6 +12,7 @@ let
       customPlugins = with pkgs.vimPlugins; [
         multiple-cursors
         vim-repeat
+        conjure
       ];
       lsp = {
         enable = true;
@@ -24,7 +25,7 @@ let
         lspSignature.enable = true;
         scala = {
           inherit (pkgs) metals;
-          enable = true;
+          enable = false;
         };
         nix = {
           enable = true;
@@ -37,9 +38,10 @@ let
         elm = false;
         haskell = false;
         sql = false;
-        python = false;
+        python = true;
         clang = false;
         go = false;
+        clojure = true;
       };
       plantuml.enable = false;
       fx.automaton.enable = true;
@@ -64,8 +66,8 @@ let
       };
       theme = {
         enable = true;
-        name = "onedark";
-        style = "deep";
+        name = "rose-pine";
+        style = "dawn";
         transparency = true;
       };
       autopairs.enable = true;
@@ -99,7 +101,7 @@ let
       telescope = {
         enable = true;
         # NOTE: still quite buggy in some terminals
-        mediaFiles.enable = false;
+        mediaFiles.enable = true;
       };
       markdown = {
         enable = true;
@@ -138,6 +140,7 @@ let
       # FIXME: dhall is marked as broken on nixpkgs
       dhall = false;
       elm = true;
+      python = true;
     };
   };
 

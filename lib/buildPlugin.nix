@@ -17,6 +17,8 @@ let
   treesitterGrammars = ts.withPlugins (p: [
     p.tree-sitter-scala
     p.tree-sitter-c
+    p.tree-sitter-clojure
+    p.tree-sitter-fennel
     p.tree-sitter-nix
     p.tree-sitter-elm
     p.tree-sitter-haskell
