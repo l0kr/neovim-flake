@@ -62,12 +62,12 @@ let
       };
       statusline.lualine = {
         enable = true;
-        theme = "onedark";
+        theme = "nightfox";
       };
       theme = {
         enable = true;
-        name = "rose-pine";
-        style = "dawn";
+        name = "nightfox";
+        style = "carbonfox";
         transparency = true;
       };
       autopairs.enable = true;
