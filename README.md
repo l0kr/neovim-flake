@@ -5,10 +5,6 @@
 
 Nix flake for [neovim](https://neovim.io/) with configuration options highly focused on Scala 3.
 
-![screenshot-1](./docs/screenshot-1.png)
-
-![screenshot-2](./docs/screenshot-2.png)
-
 ## Documentation
 
 - [https://gvolpe.com/neovim-flake](https://gvolpe.com/neovim-flake).
