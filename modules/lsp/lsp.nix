@@ -460,6 +460,11 @@ in
           cmd = { "${pkgs.nodePackages.typescript-language-server}/bin/typescript-language-server", "--stdio" }
         }
       ''}
+
+      ${writeIf cfg.clojure ''
+        -- Clojure config
+        lspconfig.clojure_lsp.setup {}
+      ''}
     '';
   };
 }

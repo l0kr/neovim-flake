@@ -11,6 +11,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    clojure-lsp-overlay =
+      {
+        url = "github:clojure-lsp/clojure-lsp";
+        inputs.nixpkgs.follows = "nixpkgs";
+
+      };
+
     # nix lsp support
     nixd.url = github:nix-community/nixd;
 
@@ -362,8 +369,13 @@
           };
         };
 
+
         neovimOverlay = f: p: {
           neovim-nightly = inputs.neovim-nightly-overlay.packages.${system}.neovim;
+        };
+
+        clojureOverlay = f: p: {
+          clojure-overlay = inputs.clojure-lsp-overlay.packages.${system}.neovim;
         };
 
         nixdOverlay = f: p: {
@@ -373,7 +385,7 @@
         pkgs = import nixpkgs {
           inherit system;
           config = { allowUnfree = true; };
-          overlays = [ libOverlay pluginOverlay metalsOverlay neovimOverlay nmdOverlay nixdOverlay tsOverlay ];
+          overlays = [ libOverlay pluginOverlay metalsOverlay clojureOverlay neovimOverlay nmdOverlay nixdOverlay tsOverlay ];
         };
 
         default-ide = pkgs.callPackage ./lib/ide.nix {
