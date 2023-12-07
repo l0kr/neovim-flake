@@ -55,7 +55,7 @@ in
       '';
 
       vim.startPlugins = with pkgs.neovimPlugins; (
-        (withPlugins (cfg.name == "nightfox") [ nightfox ]) ++
+        (withPlugins (cfg.name == "nightfox") [ nightfox monotone]) ++
         (withPlugins (cfg.name == "onedark") [ onedark ]) ++
         (withPlugins (cfg.name == "tokyonight") [ tokyonight ]) ++
         (withPlugins (cfg.name == "rose-pine") [ rosepine ]) ++
@@ -71,6 +71,9 @@ in
               transparent = "${transparency}",
             }
           }
+          -- monotone theme
+          vim.g.monotone_contrast = 325
+          vim.g.monotone_true_monotone = true
           
           vim.cmd("colorscheme ${cfg.style}")
         ''

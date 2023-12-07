@@ -241,6 +241,16 @@
       flake = false;
     };
 
+    monotone = {
+      url = github:Lokaltog/monotone.nvim;
+      flake = false;
+    };
+
+    lush = {
+      url = github:rktjmp/lush.nvim;
+      flake = false;
+    };
+
     onedark = {
       url = github:navarasu/onedark.nvim;
       flake = false;
