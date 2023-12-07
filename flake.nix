@@ -1,5 +1,5 @@
 {
-  description = "Neovim Flake by Gabriel Volpe";
+  description = "Neovim Flake by l0kr";
 
   inputs = {
     #nixpkgs.url = git+file:///home/gvolpe/workspace/nixpkgs;
