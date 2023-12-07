@@ -665,16 +665,16 @@
     "monotone": {
       "flake": false,
       "locked": {
-        "lastModified": 1639945295,
-        "narHash": "sha256-fEcEYkrXfL19iE4Svwn5de6mOwJ2D8kKogv4axYLF1o=",
+        "lastModified": 1595159016,
+        "narHash": "sha256-BMN+3pgF7NgMkEpmMNTjZmSjWiVliBkwzQ9vw+Mq33M=",
         "owner": "Lokaltog",
-        "repo": "monotone.nvim",
-        "rev": "32b906d8c0ee248d086a7f2a808a4d89fb997d9d",
+        "repo": "vim-monotone",
+        "rev": "5393343ff2d639519e4bcebdb54572dfe5c35686",
         "type": "github"
       },
       "original": {
         "owner": "Lokaltog",
-        "repo": "monotone.nvim",
+        "repo": "vim-monotone",
         "type": "github"
       }
     },

@@ -46,12 +46,12 @@ in
       transparency = builtins.toString cfg.transparency;
     in
     {
-      vim.configRC = mkIf (cfg.name == "tokyonight") ''
+      vim.configRC = mkIf (cfg.name == "nightfox") ''
         " need to set style before colorscheme to apply
-        let g:${cfg.name}_style = "${cfg.style}"
-        let g:${cfg.name}_transparent = "${transparency}"
-        let g:${cfg.name}_transparent_sidebar = "${transparency}"
-        colorscheme ${cfg.name}
+        " let g:monotone_color = [120, 100, 70] " Sets theme color to bright green
+        let g:monotone_secondary_hue_offset = 320 " Offset secondary colors by 200 degrees
+        let g:monotone_emphasize_comments = 1 " Emphasize comments
+        let g:monotone_emphasize_whitespace = 1 " Emphasize whitespace
       '';
 
       vim.startPlugins = with pkgs.neovimPlugins; (
@@ -72,8 +72,8 @@ in
             }
           }
           -- monotone theme
-          vim.g.monotone_contrast = 325
-          vim.g.monotone_true_monotone = true
+          --vim.g.monotone_contrast = 100
+          --vim.g.monotone_true_monotone = true
           
           vim.cmd("colorscheme ${cfg.style}")
         ''

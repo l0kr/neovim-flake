@@ -242,7 +242,7 @@
     };
 
     monotone = {
-      url = github:Lokaltog/monotone.nvim;
+      url = github:Lokaltog/vim-monotone;
       flake = false;
     };
 
