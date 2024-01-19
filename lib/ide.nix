@@ -67,7 +67,7 @@ let
       theme = {
         enable = true;
         name = "catppuccin";
-        style = "night";
+        style = "mocha";
         transparency = true;
       };
       autopairs.enable = true;
