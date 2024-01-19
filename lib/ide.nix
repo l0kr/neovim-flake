@@ -67,7 +67,7 @@ let
       theme = {
         enable = true;
         name = "tokyonight";
-        style = "storm";
+        style = "night";
         transparency = true;
       };
       autopairs.enable = true;
@@ -175,7 +175,7 @@ let
       theme = {
         enable = true;
         name = "tokyonight";
-        style = "storm";
+        style = "night";
         transparency = false;
       };
     };

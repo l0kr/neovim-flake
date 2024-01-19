@@ -88,6 +88,17 @@ in
         ''
         }
 
+        ${writeIf (cfg.name == "tokyonight") ''
+          -- Tokyonight theme
+          require('tokynight').setup {
+            style = "${cfg.style}",
+            transparent = "${transparency}",
+          }
+          require('tokyonight').load()
+        ''
+        }
+
+
         ${writeIf (cfg.name == "catppuccin") ''
           vim.g.catppuccin_flavour = "${cfg.style}"
           require("catppuccin").setup({
