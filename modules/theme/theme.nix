@@ -89,12 +89,7 @@ in
         }
 
         ${writeIf (cfg.name == "tokyonight") ''
-          -- Tokyonight theme
-          require('tokynight').setup {
-            style = "${cfg.style}",
-            transparent = "${transparency}",
-          }
-          require('tokyonight').load()
+          vim.cmd("colorscheme ${cfg.style}")
         ''
         }
 

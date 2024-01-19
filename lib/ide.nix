@@ -62,12 +62,12 @@ let
       };
       statusline.lualine = {
         enable = true;
-        theme = "tokyonight";
+        theme = "catpuccin";
       };
       theme = {
         enable = true;
-        name = "tokyonight";
-        style = "night";
+        name = "catpuccin";
+       # style = "night";
         transparency = true;
       };
       autopairs.enable = true;
