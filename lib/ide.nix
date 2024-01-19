@@ -41,7 +41,7 @@ let
         python = true;
         clang = true;
         go = false;
-        clojure = true;
+        clojure = false;
       };
       plantuml.enable = false;
       fx.automaton.enable = true;
@@ -62,12 +62,12 @@ let
       };
       statusline.lualine = {
         enable = true;
-        theme = "nightfox";
+        theme = "tokyonight";
       };
       theme = {
         enable = true;
-        name = "nightfox";
-        style = "carbonfox";
+        name = "tokyonight";
+        style = "storm";
         transparency = true;
       };
       autopairs.enable = true;
@@ -137,10 +137,6 @@ let
   langs = {
     vim.lsp = {
       ts = true;
-      smithy.enable = true;
-      # FIXME: dhall is marked as broken on nixpkgs
-      dhall = false;
-      elm = true;
       python = true;
     };
   };
