@@ -70,10 +70,6 @@ in
               transparent = "${transparency}",
             }
           }
-          -- monotone theme
-          --vim.g.monotone_contrast = 100
-          --vim.g.monotone_true_monotone = true
-          
           vim.cmd("colorscheme ${cfg.style}")
         ''
         }
@@ -99,7 +95,7 @@ in
           require("catppuccin").setup({
             transparent_background = ${if cfg.transparency then "true" else "false"},
           })
-          vim.cmd [[colorscheme catppuccin]]
+          vim.cmd [[colorscheme retrobox]]
         ''
         }
 

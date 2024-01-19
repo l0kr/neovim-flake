@@ -62,7 +62,7 @@ let
       };
       statusline.lualine = {
         enable = true;
-        theme = "catppuccin";
+        theme = "retrobox";
       };
       theme = {
         enable = true;
